@@ -15,14 +15,14 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/trueos/sysup/client"
-	"github.com/trueos/sysup/defines"
-	"github.com/trueos/sysup/logger"
-	"github.com/trueos/sysup/pkg"
-	"github.com/trueos/sysup/trains"
-	"github.com/trueos/sysup/update"
-	"github.com/trueos/sysup/utils"
-	"github.com/trueos/sysup/ws"
+	"github.com/rem-os/sysup/client"
+	"github.com/rem-os/sysup/defines"
+	"github.com/rem-os/sysup/logger"
+	"github.com/rem-os/sysup/pkg"
+	"github.com/rem-os/sysup/trains"
+	"github.com/rem-os/sysup/update"
+	"github.com/rem-os/sysup/utils"
+	"github.com/rem-os/sysup/ws"
 )
 
 // Set up the websocket address
