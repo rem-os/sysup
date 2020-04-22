@@ -11,9 +11,9 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/trueos/sysup/defines"
-	"github.com/trueos/sysup/logger"
-	"github.com/trueos/sysup/ws"
+	"github.com/rem-os/sysup/defines"
+	"github.com/rem-os/sysup/logger"
+	"github.com/rem-os/sysup/ws"
 )
 
 var KernelPkg string = ""

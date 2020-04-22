@@ -1,5 +1,5 @@
 # sysup
-System Update utility written in GO for Remos  and related projects that are updated using FreeBSD's pkg base.
+System Update utility written in GO for RemOS and related projects that are updated using FreeBSD's pkg base.
 
 # Command-line Usage and Details
 ## Full lists of options

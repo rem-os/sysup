@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"github.com/trueos/sysup/defines"
+	"github.com/rem-os/sysup/defines"
 	"log"
 	"os"
 	"os/exec"

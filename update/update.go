@@ -6,10 +6,10 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/trueos/sysup/defines"
-	"github.com/trueos/sysup/logger"
-	"github.com/trueos/sysup/pkg"
-	"github.com/trueos/sysup/ws"
+	"github.com/rem-os/sysup/defines"
+	"github.com/rem-os/sysup/logger"
+	"github.com/rem-os/sysup/pkg"
+	"github.com/rem-os/sysup/ws"
 	"io"
 	"io/ioutil"
 	"log"
@@ -1338,9 +1338,9 @@ func updateuefi(disk string, stagedir string) bool {
 			// Copy the new UEFI file over
 			var tgt string
 			if _, err := os.Stat(
-				"/boot/efi/efi/boot/bootx64-trueos.efi",
+				"/boot/efi/efi/boot/bootx64-remos.efi",
 			); os.IsNotExist(err) {
-				tgt = "/boot/efi/efi/boot/bootx64-trueos.efi"
+				tgt = "/boot/efi/efi/boot/bootx64-remos.efi"
 			} else {
 				tgt = "/boot/efi/efi/boot/bootx64.efi"
 			}

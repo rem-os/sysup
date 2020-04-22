@@ -1,4 +1,4 @@
-module github.com/trueos/sysup
+module github.com/rem-os/sysup
 
 go 1.12
 

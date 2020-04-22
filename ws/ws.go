@@ -3,7 +3,7 @@ package ws
 import (
 	"encoding/json"
 	"github.com/gorilla/websocket"
-	"github.com/trueos/sysup/defines"
+	"github.com/rem-os/sysup/defines"
 	"log"
 	"time"
 )

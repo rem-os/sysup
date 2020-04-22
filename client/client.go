@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/websocket"
-	"github.com/trueos/sysup/defines"
+	"github.com/rem-os/sysup/defines"
 	"log"
 	"os"
 )
