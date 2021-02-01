@@ -422,7 +422,7 @@ func cleanup_openzfs_port() {
 	// Update the sysutils/openzfs port
 	cmd := exec.Command(
 		defines.PKGBIN, "-c", defines.STAGEDIR, "-C", defines.PkgConf,
-		"delete", "-U", "-y", "sysutils/openzfs-kmod",
+		"-U", "delete", "-y", "sysutils/openzfs-kmod",
 	)
 	logger.LogToFile(
 		"Cleaning up ZFS port with: " + strings.Join(cmd.Args, " "),
