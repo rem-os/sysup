@@ -965,7 +965,7 @@ func updatekernel() {
 	}
 
 	// Check if we need to do any ZFS automagic
-	sanitize_zfs()
+	//sanitize_zfs()
 
 }
 
