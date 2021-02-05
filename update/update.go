@@ -736,11 +736,19 @@ func updatercscript() {
 
 	selfbin, _ := os.Executable()
 	ugobin := "/." + defines.ToolName
-	cpCmd = exec.Command("install", "-m", "755", selfbin, defines.STAGEDIR+ugobin)
+	//install binary is broken in certain freebsd versions use cp+chmod
+	cpCmd = exec.Command("cp", selfbin, defines.STAGEDIR+ugobin)
 	err = cpCmd.Run()
 	if err != nil {
-		logger.LogToFile("Failed pkg upgrade!")
-		ws.SendMsg("Failed pkg upgrade!", "fatal")
+		logger.LogToFile("Failed pkg upgrade: Couldn't copy rc-updater!")
+		ws.SendMsg("Failed pkg upgrade: Couldn't copy rc-updater!", "fatal")
+		log.Fatal(err)
+	}
+	cpCmd = exec.Command("chmod", "755", selfbin, defines.STAGEDIR+ugobin)
+	err = cpCmd.Run()
+	if err != nil {
+		logger.LogToFile("Failed pkg upgrade: Counldn't chmod rc-updater!")
+		ws.SendMsg("Failed pkg upgrade: Couldn't chmod rc-updater!", "fatal")
 		log.Fatal(err)
 	}
 
